@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Habit tracker</string>
+    <string name="AddHab">Button</string>
+
+    <string name="Add">+</string>
+
+    <string name="Logo">TODO</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="DayTV">TextView</string>
+    <string name="day">Day</string>
+    <string name="NewTitle">TextView</string>
+
+    <string name="logo">TODO</string>
+    <string name="new_habit">New habit</string>
+    <string name="days_for_habit">Days for habit</string>
+    <string name="number_of_dates">Number of dates</string>
+    <string name="time_for_a_reminder">Time for a reminder</string>
+    <string name="day_of_the_week">Day of the week</string>
+    <string name="time">Time</string>
+    <string name="never">Never</string>
+
+
+    <string name="ActBar">TODO</string>
+
+    <string name="how_many_days_left">How many days left</string>
+    <string name="number">Number</string>
+
+    <string name="delete">Delete</string>
+    <string name="save" >Save</string>
+    <string name="title">Title</string>
+    <string name="save_habit">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="cancel_reminder">Cancel reminder</string>
+    <string name="resert">Cancel</string>
+
+
+</resources>

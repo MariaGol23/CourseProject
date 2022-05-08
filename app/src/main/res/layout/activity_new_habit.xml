@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewHabit">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="144dp"
+        android:layout_height="58dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/ffffffffffffffff" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="340dp"
+        android:layout_height="606dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="341dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="23dp"
+            app:cardBackgroundColor="#D8F7E7">
+
+            <EditText
+                android:id="@+id/TitleInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textSize="50sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="341dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="23dp"
+            app:cardBackgroundColor="#D8F7E7"
+            app:layout_column="0"
+            app:layout_row="1">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="35dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/days_for_habit"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/number_of_dates"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="336dp"
+            android:layout_height="200dp"
+            android:background="@drawable/border"
+            android:foregroundGravity="top|left"
+            app:cardBackgroundColor="#D8F7E7"
+            app:layout_column="0"
+            app:layout_row="2">
+
+            <Button
+                android:id="@+id/SaveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/save_habit"
+                android:textAlignment="center"
+                android:textColor="#3E2723"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="43dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textAlignment="center"
+                android:textColor="#3E2723"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/time_for_a_reminder"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="35dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/day_of_the_week"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="58dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/time"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="55dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/never"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/new_habit"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/actionbar"
+        android:contentDescription="@string/ActBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
